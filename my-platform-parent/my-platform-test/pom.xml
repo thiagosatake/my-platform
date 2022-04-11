@@ -5,12 +5,11 @@
 	<parent>
 		<groupId>my.microservices.platform</groupId>
 		<artifactId>my-platform-parent</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.2</version>
 	</parent>
 	
 	<groupId>my.microservices.platform.test</groupId>
 	<artifactId>my-platform-test</artifactId>
-	<version>${platform-test.version}</version>	
 
 	<dependencies>
 		<dependency>
