@@ -10,7 +10,6 @@
 	
 	<groupId>my.microservices.platform.activemq</groupId>
 	<artifactId>my-platform-activemq</artifactId>
-	<version>${platform-activemq.version}</version>
 
 	<dependencies>
 		<dependency>

@@ -10,7 +10,6 @@
 	
 	<groupId>my.microservices.platform.jpa-data</groupId>
 	<artifactId>my-platform-jpa-data</artifactId>
-	<version>${platform-jpa-data.version}</version>
 
 	<dependencies>
 		<dependency>

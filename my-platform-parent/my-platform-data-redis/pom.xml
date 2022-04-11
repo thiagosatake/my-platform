@@ -10,7 +10,6 @@
 	
 	<groupId>my.microservices.platform.data-redis</groupId>
 	<artifactId>my-platform-data-redis</artifactId>
-	<version>${platform-data-redis.version}</version>
 	
 	<dependencies>
 		<dependency>

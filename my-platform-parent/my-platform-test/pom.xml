@@ -10,7 +10,6 @@
 	
 	<groupId>my.microservices.platform.test</groupId>
 	<artifactId>my-platform-test</artifactId>
-	<version>${platform-test.version}</version>	
 
 	<dependencies>
 		<dependency>
