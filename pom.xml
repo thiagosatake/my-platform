@@ -8,13 +8,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
- 	<properties>
-    	<platform-web.version>0.0.1-SNAPSHOT</platform-web.version>
-    	<platform-jpa-data.version>0.0.1-SNAPSHOT</platform-jpa-data.version>
-    	<platform-data-redis.version>0.0.1-SNAPSHOT</platform-data-redis.version>
-    	<platform-activemq.version>0.0.1-SNAPSHOT</platform-activemq.version>
-    	<platform-test.version>0.0.1-SNAPSHOT</platform-test.version>
- 	</properties>
+	<properties>
+		<platform-web.version>0.0.1-SNAPSHOT</platform-web.version>
+		<platform-jpa-data.version>0.0.1-SNAPSHOT</platform-jpa-data.version>
+		<platform-data-redis.version>0.0.1-SNAPSHOT</platform-data-redis.version>
+		<platform-activemq.version>0.0.1-SNAPSHOT</platform-activemq.version>
+		<platform-test.version>0.0.1-SNAPSHOT</platform-test.version>
+		
+		<gitflow-maven-plugin.version>1.18.0</gitflow-maven-plugin.version>
+	</properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -45,9 +47,23 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<modules>
-    	<module>my-platform-parent</module>
- 	</modules>
+		<module>my-platform-parent</module>
+	</modules>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>com.amashchenko.maven.plugin</groupId>
+				<artifactId>gitflow-maven-plugin</artifactId>
+				<version>${gitflow-maven-plugin.version}</version>
+				<configuration>
+					<!-- optional configuration -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
