@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>my.microservices.platform</groupId>
 	<artifactId>my-platform</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -65,5 +65,15 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+
+		<repository>
+			<id>uautk-uautk-maven-repository</id>
+			<name>uautk-uautk-maven-repository</name>
+			<url>https://uautk-923928531961.d.codeartifact.us-east-1.amazonaws.com/maven/uautk-maven-repository/</url>
+		</repository>
+
+	</distributionManagement>
 
 </project>
