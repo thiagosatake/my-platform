@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>my.microservices.platform</groupId>
 	<artifactId>my-platform</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -16,6 +16,7 @@
 		<platform-test.version>${project.version}</platform-test.version>
 		
 		<gitflow-maven-plugin.version>1.18.0</gitflow-maven-plugin.version>
+		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version> 
 	</properties>
 
 	<dependencyManagement>
@@ -53,8 +54,16 @@
 	</modules>
 
 	<build>
-		<plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven-deploy-plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 
+		<plugins>
 			<plugin>
 				<groupId>com.amashchenko.maven.plugin</groupId>
 				<artifactId>gitflow-maven-plugin</artifactId>
@@ -65,15 +74,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-
-		<repository>
-			<id>uautk-uautk-maven-repository</id>
-			<name>uautk-uautk-maven-repository</name>
-			<url>https://uautk-923928531961.d.codeartifact.us-east-1.amazonaws.com/maven/uautk-maven-repository/</url>
-		</repository>
-
-	</distributionManagement>
 
 </project>
